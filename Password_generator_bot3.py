@@ -30,11 +30,9 @@ while True:
         if length <5:
             print("We recommend to choose from 5 to 12 symbols")
             time.sleep(1)
-            continue
         elif length >15:
             print("It`s too long password, we recommend the length about 12 symbols")
             time.sleep(1)
-            continue
         else:
             password = "".join(random.sample(all, length))
             print("Generation is going...")
@@ -44,4 +42,3 @@ while True:
             break
     except ValueError:
         print("Please enter the integer")
-        continue
